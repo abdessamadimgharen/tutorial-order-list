@@ -1,0 +1,179 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* Start Orders  */
+.orders {
+    background-color: #eee;
+    padding: 20px;
+}
+.container {
+    padding: 20px;
+    background-color: white;
+}
+/* Start header  */
+.container header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container header h3 {
+    font-weight: 600;
+    margin: 0;
+}
+.container header i {
+    font-size: 25px;
+    color: #777;
+}
+/* End header  */
+/* Start Form  */
+.container form {
+    display: grid;
+    grid-template-columns: 15% 40% 32% 10%;
+    grid-gap: 1%;
+    margin-top: 20px;
+}
+.container form input {
+    border: none;
+    padding: 12px;
+    background-color: #f0f1f3;
+}
+.container form input:hover {
+    outline: none;
+}
+.container form input:focus {
+    outline: none;
+}
+.container form input::placeholder {
+    color: #777;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: italic;
+}
+.container form input[type="submit"] {
+    background-image: linear-gradient(to right, #40389e, #7224a0);
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+/* End Form  */
+/* Start list-content */
+.container .list  {
+    padding: 30px 0;
+}
+.container .list .row .col {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container .list .row .col div:first-of-type {
+    display: flex;
+    align-items: center;
+}
+.container .list .row .col div {
+    width: calc(100% / 9);
+}
+.container .list .row:first-of-type .col div {
+    width: calc(100% / 7);
+}
+.container .list .row img {
+    width: 50px;
+}
+.container .list hr {
+    opacity: .3;
+}
+.container .list .row i {
+    color: #777;
+}
+.container .list .row:first-of-type .col div:not(:first-child, :nth-of-type(2), :nth-of-type(5))::after {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f0d7'; 
+    margin-left: 5px;
+}
+.container .list .row:first-of-type  {
+    padding: 0 0 10px;
+}
+.container .list .row:first-of-type .col div,
+.container .list .row:nth-child(3)  .col div{
+    font-weight: bold;
+    color: #444;
+}
+.container .list .row:not(:first-of-type, :nth-child(3)) .col div{
+    color: #777;
+    font-weight: bold;
+}
+.container .list .row .col span:first-of-type {
+    border: 2px solid #ccc;
+    padding: 4px 8px;
+    border-radius: 3px;
+}
+.container .list .row:not(:nth-of-type(3), :nth-of-type(6)) .col button {
+    color: white;
+    border: none;
+    background-color: #2ce5c0;
+    padding: 7px 10px;
+    border-radius: 5px;
+}
+.container .list .row:nth-of-type(3) .col button,
+.container .list .row:nth-of-type(6) .col button {
+    color: white;
+    border: none;
+    background-color: #ffb74d;
+    padding: 7px 10px;
+    border-radius: 5px;
+    width: 100px;
+}
+.container .list .row .col input[type="checkbox"] {
+    border-radius: 3px;    
+    width: 20px;
+    height: 20px;
+}
+.container .list .row .col input[type="checkbox"] + label {
+    padding-left: 10px;
+}
+.container .list .row .col input[type="checkbox"]:checked {
+    appearance: none;
+    box-shadow: 1px 1px 4px 0px #7224a0;
+    background-image: linear-gradient(to right, #40389e, #7224a0);
+}
+/* End list-content */
+/* Start Footer  */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+    color: #777;
+    font-weight: 600;
+}
+footer span:not(:first-child, :last-child) {
+    width: 15px;
+    height: 15px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    color: #999;
+}
+footer span:nth-child(2) {
+    background-color: #4b349e;
+    color: white;
+}
+footer span:first-child {
+    padding-right: 10px;
+}
+footer span:last-child {
+    margin-left: 10px;
+}
+/* End Footer  */
+/* End Orders  */
